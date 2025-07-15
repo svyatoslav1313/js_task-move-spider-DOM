@@ -17,11 +17,11 @@ wall.addEventListener('click', (e) => {
   let left = clickX - wallRect.left - wallBorder - spiderWidth / 2;
   let newTop = clickY - wallRect.top - wallBorder - spiderHeight / 2;
 
-  if (left < spiderWidth) {
+  if (left < 0) {
     left = 0;
   }
 
-  if (newTop < spiderHeight) {
+  if (newTop < 0) {
     newTop = 0;
   }
 
